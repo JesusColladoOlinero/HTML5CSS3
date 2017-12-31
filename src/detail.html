@@ -3,49 +3,54 @@
 <head>
 	<title>Omnichannel Shopping: Optimizaing Ecommerce App</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/grid-area.css">	
+  	<link rel="stylesheet" href="css/flex-container.css">	
 </head>
-<body>
-	<header>
-		<figure>
+<body class="container">
+	<header class="container__item container__item--head head-container">
+		<figure class="header__logo--img">
 			<img src="./img/logo.jpg" alt="SIMPLE BLOG UI" />
 		</figure>		
-		<nav>
+		<nav class="header__menu">
 			<ul>
-				<li><a href="./myprofile.html" title="Mi perfil" >Mi perfil</a></li>
+				<li class="header__separador--left"><a href="./myprofile.html" title="Mi perfil" >Mi perfil</a></li>
 				<li><a href="./addpost.html" title="Añadir artículo">A&ntilde;adir art&iacute;culo</a></li>
 				<li><a href="./addimage.html" title="Añadir imagen">A&ntilde;adir imagen</a></li>
-				<li><a href="./games.html" title="Juegos"></a>Juegos</li>
+				<li><a href="./games.html" title="Juegos">Juegos</a></li>
 				<li><a href="./chat.html" title="Chat">Chat</a></li>
-				<li><a href="./contact.html" title="Contacto">Contacto</a></li>
+				<li><a href="./contact.html" title="Contacto">Contacto</a></li>				
 			</ul>
 		</nav>
 	</header>
-	<section>
+	<section class="container__item container__item--body section__container">
 		<header>
-			<h1>Top 6 art&iacute;culos</h1>
+			<h1 class="section__h1">Top 6 art&iacute;culos</h1>
 		</header>		
-		<article>
+		<div class="section__separator"></div>		
+		<article class="section__article-detail">
 			<figure>
-				<h3><img src="./img/post_5.jpg" alt="Omnichannel Shopping: Optimizaing Ecommerce App" /></h3>
+				<h3><img src="./img/detale-post.jpg" alt="Omnichannel Shopping: Optimizaing Ecommerce App" /></h3>
 			</figure>			
-			<nav>
-				<a href="./ecommerce.html" title="Ecommerce">Ecommerce</a>
+			<nav class="article__nav article__nav--color1 article__margin--detail">
+				<a class="article__nav--sep1" href="./ecommerce.html" title="Ecommerce">Ecommerce</a>
 				<a href="./digitalmarketing.html" title="Digital Marketing">Digital Marketing</a>
 			</nav>
-			<div>on June 29, 2016 / by Florian Gendrault</div>
-			<header>
+			<div class="article__date article__margin--detail">on June 29, 2016 / by Florian Gendrault</div>
+			<header class="article_header article__margin--detail">
 				<h2>Omnichannel Shopping: Optimizaing Ecommerce App</h2>
 			</header>
-			<div><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			<div class="article__detail--detail article__margin--detail-botton"><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 			<p>
 			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
 			</div>
 		</article>		
+		<div class="article__detail--sep"></div>
 	</section>
-	<footer>
-		<nav>
+	<footer class="container__item container__item--footer footer__container">
+		<nav class="footer__nav">
 			<ul>				
-				<li><a href="./index.html" title="Inicio"></a>Inicio</li>
+				<li><a href="./index.html" title="Inicio">Inicio</a></li>
 				<li><a href="./help.html" title="Ayuda">Ayuda</a></li>
 				<li><a href="./contact.html" title="Contacto">Contacto</a></li>
 			</ul>
