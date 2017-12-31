@@ -1,0 +1,39 @@
+.container{
+	display: grid;
+	/**
+	 * Aqui definimos las áreas que va a tener nuestro grid
+	 * En este caso estoy definiendo un grid de 3 columnas por 3 filas
+	 */
+	grid-template-areas: "head"
+                       "body"
+                       "footer";
+
+
+}
+
+/**
+ * Ahora, a cada elemento hijo de mi grid le especifico en qué area quiero que se coloque
+ * No importa en qué orden estén en el HTML, la colocación la marca el CSS
+ *
+ * Si en head solo pongo 1 elemento, ese elemento ocupará el total del area "head". Si pongo 2, se dividirá en dos (prúebalo!)
+ */
+.container__item--head{
+	grid-area: head;
+	background-color: #FFF;	
+	text-align: left;
+	align-items: left;
+	justify-content: normal;
+}
+.container__item--body{
+	grid-area: body;
+	display: flex;
+	flex-direction: column;	
+	align-items: left;	
+}
+.container__item--footer{
+	grid-area: footer;
+    text-align: left;
+    align-items: left;
+    justify-content: normal;
+    margin-top: 100px;
+}
