@@ -1,0 +1,9 @@
+/**
+ * Flex properties
+ * ---------------
+ * justify-content
+ */
+.head-container{
+	display: flex;
+	flex-direction: column;	
+}
