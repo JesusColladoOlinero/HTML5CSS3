@@ -312,3 +312,16 @@ h3{
     clear: both;
     text-align: left;
 }
+
+/*Validaciones formulario*/
+
+
+form input:required:valid{
+    border:2px solid green;
+    background-color: #E5F6D2
+}
+
+form input:invalid{
+    border:2px solid red;
+    background-color: #F6CCD0;
+}

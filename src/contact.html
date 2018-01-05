@@ -10,7 +10,7 @@
 <body class="container">
 	<header class="container__item container__item--head head-container">
 		<figure class="header__logo--img">
-			<img src="./img/logo.jpg" alt="SIMPLE BLOG UI" />
+			<a href="./index.html"><img src="./img/logo.jpg" alt="SIMPLE BLOG UI" /></a>
 		</figure>		
 		<nav class="header__menu">
 			<ul>
@@ -32,23 +32,23 @@
 		  <form id="contact" action="#" method="post">	
 		  	<div class="form__column">
 		  		<label>Nombre</label>
-		      	<input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+		      	<input placeholder="Nombre" type="text" tabindex="1" required autofocus maxlength="40" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
 		      	<label>Tel&eacute;fono</label>
-		      	<input placeholder="Tel&eacute;fono" type="tel" tabindex="3" required>
+		      	<input placeholder="Tel&eacute;fono" type="tel" tabindex="3" required size="20" pattern="[0-9+-]+">
 		      	<label>Fecha de nacimiento</label>
-		     	<input type="date" tabindex="5" required>
+		     	<input type="date" tabindex="5">
 		     	<label>Color favorito</label>
-		      	<input class="form__container--input-color" type="color" tabindex="7">		      	
+		      	<input class="form__container--input-color" type="color" tabindex="7" value="#BC5254">		      	
 		  	</div>	
 		  	<div class="form__column">
 		  		<label>Apellidos</label>
-		     	<input placeholder="Apellidos" type="text" tabindex="2" required>
+		     	<input placeholder="Apellidos" type="text" tabindex="2" required maxlength="40" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
 		     	<label>Email</label>
-		     	<input placeholder="Email" type="email" tabindex="4" required>
+		     	<input placeholder="Email" type="email" tabindex="4" required maxlength="40">
 		     	<label>Altura</label>
-		      	<input placeholder="Altura" type="number" tabindex="6" required>
+		      	<input placeholder="Altura" type="number" tabindex="6"  min="0" max="250">
 		      	<label>Web favorita</label>
-		      	<input placeholder="Web favorita" type="url" tabindex="8" required>
+		      	<input placeholder="Web favorita" type="url" tabindex="8"  maxlength="60">
 		  	</div>	 
 		  	<div class="form__column--button">
 		  		<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Save</button>
