@@ -60,6 +60,8 @@
  		display: flex;
  		flex-direction: column;
  		width: 100%;
+ 		animation-duration: 1s;
+ 		animation-name: slidein;
  	}
 
  	.section__body-container article{
@@ -118,5 +120,14 @@
  		height: 100%;
  		margin-bottom: 25px;
  	}
+
+ 	/* Animations */
+ 	@keyframes slidein {
+	 from {
+	 margin-top: 100%;
+	 }
+	 to {
+	 margin-top: 0%;
+	}
 }
 
