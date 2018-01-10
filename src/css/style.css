@@ -31,7 +31,7 @@
     font-size: 14pt;
     color: #6f6f6f;
     margin-top: 10px;
-    height: 70px;
+    /*height: 70px;*/
     width: 100%;
     border-top: 2px solid #ececec;
     padding-top: 12px;
@@ -41,8 +41,9 @@
 
 .header__menu ul{
 	list-style: none;    
-    height: 83px;
+    /*height: 83px;*/
     margin-top: -13px;
+    margin-bottom: -1px;
     border-right: 2px solid #ececec;
     margin-right: 135px;
     padding: 0;
@@ -50,8 +51,10 @@
 
 .header__menu ul li{
 	display: inline-flex;
-    border-right: 2px solid #ececec;
-    padding: 31px 20px 31px 20px;    
+    border: 2px solid #ececec;
+    padding: 31px 20px 31px 20px;
+    margin: -1px;
+    float: left;
 }
 
 .header__menu a{

@@ -1,0 +1,32 @@
+/* Header */
+.header__menu{
+	transition-duration: 1s;
+	transition-property: padding;
+}
+
+.header__menu a{
+	transition-duration: 1s;
+	transition-property: text-align, font-size;
+}
+
+/* Content */
+.section__header, .section__separator{
+	transition-duration: 1s;
+	transition-property: margin-left;
+}
+
+/* Footer */
+.footer__container{
+	transition-duration: 1s;
+	transition-property: padding, margin;
+}
+
+.footer__container ul li{
+	transition-duration: 1s;
+	transition-property: margin;
+}
+
+.footer__nav{
+	transition-duration: 1s;
+	transition-property: margin;
+}
