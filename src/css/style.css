@@ -284,6 +284,21 @@ h3{
     background-color: #f7f9f8;
 }
 
+.form__container canvas{
+     float: left;
+    clear: both;
+    margin-bottom: 20px;
+    margin-top: 21px;
+    width: 276px;
+    height: 216px;
+    padding: 0px 5px 0px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ececec;
+    background-color: #f7f9f8;
+}
+
 .form__container button{
     border-radius: 5px;
     border: 1px solid #ececec;

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
   	<link rel="stylesheet" href="css/grid-area.css">	
   	<link rel="stylesheet" href="css/flex-container.css">	
+  	<script type="text/javascript" src="js/image.js"></script>
 </head>
 <body class="container">
 	<header class="container__item container__item--head head-container">
@@ -38,7 +39,8 @@
 		      	<label>Fecha de nacimiento</label>
 		     	<input type="date" tabindex="5">
 		     	<label>Color favorito</label>
-		      	<input class="form__container--input-color" type="color" tabindex="7" value="#BC5254">		      	
+		      	<input class="form__container--input-color" type="color" tabindex="7" value="#BC5254">	
+		      	<input type="file" accept="image/*" onchange="loadFile(event)">				      
 		  	</div>	
 		  	<div class="form__column">
 		  		<label>Apellidos</label>
@@ -49,7 +51,11 @@
 		      	<input placeholder="Altura" type="number" tabindex="6"  min="0" max="250">
 		      	<label>Web favorita</label>
 		      	<input placeholder="Web favorita" type="url" tabindex="8"  maxlength="60">
+		      	
 		  	</div>	 
+		  	<div class="form__column">
+		  		<canvas></canvas>
+		  		</div>
 		  	<div class="form__column--button">
 		  		<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Save</button>
 		      	<button name="submit" type="button" id="contact-cancel" data-submit="...Canceling">Cancel</button>
