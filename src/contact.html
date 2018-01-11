@@ -7,6 +7,7 @@
   	<link rel="stylesheet" href="css/grid-area.css">	
   	<link rel="stylesheet" href="css/flex-container.css">	
   	<script type="text/javascript" src="js/image.js"></script>
+  	<script type="text/javascript" src="js/localStorage.js"></script>
 </head>
 <body class="container">
 	<header class="container__item container__item--head head-container">
@@ -30,27 +31,27 @@
 		</header>		
 		<div class="section__separator"></div>
 		<div class="form__container">  
-		  <form id="contact" action="#" method="post">	
+		  <form id="contact" action="javascript:save();" method="post">	
 		  	<div class="form__column">
 		  		<label>Nombre</label>
-		      	<input placeholder="Nombre" type="text" tabindex="1" required autofocus maxlength="40" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
+		      	<input placeholder="Nombre" type="text" tabindex="1" required autofocus maxlength="40" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" id="nombre">
 		      	<label>Tel&eacute;fono</label>
-		      	<input placeholder="Tel&eacute;fono" type="tel" tabindex="3" required size="20" pattern="[0-9+-]+">
+		      	<input placeholder="Tel&eacute;fono" type="tel" tabindex="3" required size="20" pattern="[0-9+-]+" id="telefono">
 		      	<label>Fecha de nacimiento</label>
-		     	<input type="date" tabindex="5">
+		     	<input type="date" tabindex="5" id="fechaNacimiento">
 		     	<label>Color favorito</label>
-		      	<input class="form__container--input-color" type="color" tabindex="7" value="#BC5254">	
+		      	<input class="form__container--input-color" type="color" tabindex="7" value="#BC5254" id="color">	
 		      	<input type="file" accept="image/*" onchange="loadFile(event)">				      
 		  	</div>	
 		  	<div class="form__column">
 		  		<label>Apellidos</label>
-		     	<input placeholder="Apellidos" type="text" tabindex="2" required maxlength="40" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+">
+		     	<input placeholder="Apellidos" type="text" tabindex="2" required maxlength="40" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" id="apellidos">
 		     	<label>Email</label>
-		     	<input placeholder="Email" type="email" tabindex="4" required maxlength="40">
+		     	<input placeholder="Email" type="email" tabindex="4" required maxlength="40" id="email">
 		     	<label>Altura</label>
-		      	<input placeholder="Altura" type="number" tabindex="6"  min="0" max="250">
+		      	<input placeholder="Altura" type="number" tabindex="6"  min="0" max="250" id="altura">
 		      	<label>Web favorita</label>
-		      	<input placeholder="Web favorita" type="url" tabindex="8"  maxlength="60">
+		      	<input placeholder="Web favorita" type="url" tabindex="8"  maxlength="60" id="web">
 		      	
 		  	</div>	 
 		  	<div class="form__column">
