@@ -328,3 +328,43 @@ form input:invalid{
     border:2px solid red;
     background-color: #F6CCD0;
 }
+
+/**************************/
+
+.header__conexion{
+    width: 80px;
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    top: 100px;
+    display: none;
+}
+
+.header__conexion img{
+    width: 25px;
+    float: left;
+    text-align: right;
+}
+
+.header__desconexion img{
+    width: 25px;
+    float: left;
+    text-align: right;
+}
+
+.header__desconexion{
+    width: 80px;
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    top: 100px;  
+    display: none;  
+}
+
+.header__conexion--texto{
+    padding-right: 10px;
+}
