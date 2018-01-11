@@ -1,5 +1,10 @@
 // Código javascript
 function init(){
+	if(window.localStorage === undefined){    		
+	    console.log("El navegador no soporta localStorage");
+	    return;
+	}
+
 	var datosFormRecuperado = JSON.parse(window.localStorage.getItem("datosForm"));
 
 	if (datosFormRecuperado != null) {
@@ -13,6 +18,10 @@ function init(){
 		document.getElementById("web").setAttribute('value', datosFormRecuperado.web);
 
 		console.log(datosFormRecuperado);
+		console.log("Datos cargados correctamente.");
+	}
+	else{
+		console.log("No hay datos.");
 	}
 };
 
@@ -34,6 +43,10 @@ function save(){
 		web: document.getElementById("web").value
 	}; 
 
-	window.localStorage.setItem("datosForm", JSON.stringify(datosForm));
-	console.log(datosForm);
+	if(window.localStorage!==undefined){    
+		window.localStorage.setItem("datosForm", JSON.stringify(datosForm));
+		console.log(datosForm);
+	}else{
+	    console.log("El navegador no soporta localStorage");
+	}
 }
