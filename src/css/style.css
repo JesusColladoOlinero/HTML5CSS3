@@ -368,3 +368,9 @@ form input:invalid{
 .header__conexion--texto{
     padding-right: 10px;
 }
+
+/************/
+ #map {
+    height: 400px;
+    width: 100%;
+    }

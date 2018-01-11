@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIMPLE BLOG UI</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid-area.css">  
+    <link rel="stylesheet" href="css/flex-container.css"> 
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/transitions.css">  
+    <script type="text/javascript" src="js/geolocalization.js"></script>
+</head>
+  <body class="container">
+    <header class="container__item container__item--head head-container">
+    <figure class="header__logo--img">
+      <a href="./index.html"><img src="./img/logo.jpg" alt="SIMPLE BLOG UI" /></a>
+    </figure>   
+    <nav class="header__menu">
+      <ul>
+        <li class="header__separador--left"><a href="./myprofile.html" title="Mi perfil" >Mi perfil</a></li>
+        <li><a href="./addpost.html" title="Añadir artículo">A&ntilde;adir art&iacute;culo</a></li>
+        <li><a href="./addimage.html" title="Añadir imagen">A&ntilde;adir imagen</a></li>
+        <li><a href="./map.html" title="¿Donde estamos?">¿Donde estamos?</a></li>
+        <li><a href="./chat.html" title="Chat">Chat</a></li>
+        <li><a href="./contact.html" title="Contacto">Contacto</a></li>       
+      </ul>
+    </nav>
+    <div class="header__conexion" id="connect">
+      <div class="header__conexion--texto">Conectado</div>
+      <img src="img/connect.png" alt="Connect" />
+    </div>
+    <div class="header__desconexion" id="disconnect">
+      <div class="header__conexion--texto">Desconectado</div>
+      <img src="img/disconnect.png" alt="Connect" />
+    </div>
+  </header>
+  <section class="container__item container__item--body section__container">
+    <header class="section__header">
+      <h1 class="section__h1">¿Donde estamos?</h1>
+    </header>   
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqbuMrfOdwSHTT3UI01nHwiXQLUSswdsc&callback=initMap">
+    </script>
+  </section>
+  <footer class="container__item container__item--footer footer__container">
+    <nav class="footer__nav">
+      <ul>        
+        <li><a href="./index.html" title="Inicio">Inicio</a></li>
+        <li><a href="./help.html" title="Ayuda">Ayuda</a></li>
+        <li><a href="./contact.html" title="Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+  </body>
+</html>
